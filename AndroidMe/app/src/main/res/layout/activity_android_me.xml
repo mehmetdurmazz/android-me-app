@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.AndroidMeActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <!-- LinearLayout for holding 3 AndroidMe images  -->
+    <LinearLayout
+        android:id="@+id/android_me_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <!-- This container holds the head BodyPartFragment of the custom Android-Me image -->
+        <FrameLayout android:id="@+id/head_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
