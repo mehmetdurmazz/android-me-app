@@ -17,8 +17,20 @@
         android:paddingRight="16dp"
         android:paddingBottom="16dp">
 
-        <!-- This container holds the head BodyPartFragment of the custom Android-Me image -->
+        <!-- Three containers for each AndroidMe body part -->
+        <!-- Each container holds the head BodyPartFragment of the custom AndroidMe image -->
         <FrameLayout android:id="@+id/head_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"/>
+
+        <!-- The remaining containers for the body and leg BodyPartFragments -->
+        <FrameLayout android:id="@+id/body_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"/>
+
+        <FrameLayout android:id="@+id/leg_container"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:scaleType="centerInside"/>
