@@ -20,10 +20,15 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Create a Toast that displays the usage of app
+        Toast.makeText(this, "Select 3 images : Head, Body and Leg", Toast.LENGTH_LONG).show();
     }
 
     // Define the behavior for onImageSelected
     public void onImageSelected(int position) {
+
+
         // Create a Toast that displays the position that was clicked
         Toast.makeText(this, "Position clicked = " + position, Toast.LENGTH_SHORT).show();
 
@@ -63,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
         intent.putExtras(b);
 
         // The "Next" button launches a new AndroidMeActivity
-        Button nextButton = (Button) findViewById(R.id.next_button);
+        Button nextButton = findViewById(R.id.next_button);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
