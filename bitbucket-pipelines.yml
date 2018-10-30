@@ -14,7 +14,3 @@ pipelines:
           # You must commit the Gradle wrapper to your repository
           # https://docs.gradle.org/current/userguide/gradle_wrapper.html
           - bash ./gradlew build
-            -Dsonar.projectKey=mehmetdurmazz_androidmeapp \
-            -Dsonar.organization=mehmetdurmazz-bitbucket \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.login=2a300cf712c10a8be56a01357bd5aa423bf6a912
